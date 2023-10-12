@@ -1,0 +1,69 @@
+{{ auth()->user()->name }}
+  try{
+     }
+
+       catch (\Exception $e){
+        return $e->getMessage();
+        }
+         {
+
+            $this->validate($request, [
+                'code' => 'required',
+                'name' => 'required',
+                'place' => 'required',
+                'mobile' => 'required',
+                'id'=>'required|numeric',
+
+            ]);
+            DB transaction ( function () use(Request,$image_name){
+            });
+            public fuction edit($id){
+ $data=Model::find($id);
+ }
+
+public functiom update details(Request $request){
+
+          $data=Model::find($request $id);
+           }
+
+            @if ($errors->any())
+          <div class="alert alert-danger">
+            <ul>
+              @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+              @endforeach
+            </ul>
+          </div><br />
+          @endif
+
+              {{csrf_field()}}
+              fund_to_pay/{id}
+               href="delete/amenties/{{$da->id}}
+
+                href="{{URL::to('/')}}/frontend/css/owl.carousel.min.css"
+
+                src="{{URL::to('/')}}
+                 $edit=Product::with('names')->get();
+
+
+                  public function names()
+    {
+        return $this->hasMany('App\Models\Category','id','category_id')->select(['name as category_name','id']);
+    }
+
+    use Intervention\Image\Facades\Image;
+
+
+
+     $data=Student::find($request->id);
+        if($request->file('image')){
+        $image_name = time() . '.' . $request->file('image')->getClientOriginalExtension();
+        $image_path = 'images/' . $image_name;
+        Image::make($request->file('image'))->resize(320, 240)->save(public_path($image_path));
+        }
+        else{$image_name=$data->image;}
+
+        $image_name = time() . '.' . $request->file('image')->getClientOriginalExtension();
+    $image_path = 'images/' . $image_name;
+    Image::make($request->file('image'))->resize(320, 240)->save(public_path($image_path));
+
